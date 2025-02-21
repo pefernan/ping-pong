@@ -37,7 +37,7 @@
         <version.kie.tools>0.0.0</version.kie.tools>
 
         <!-- Quarkus -->
-        <version.quarkus>3.8.6</version.quarkus>
+        <version.quarkus>3.15.3</version.quarkus>
     </properties>
 
     <dependencyManagement>
@@ -111,10 +111,17 @@
             <groupId>org.kie</groupId>
             <artifactId>kie-addons-quarkus-messaging</artifactId>
         </dependency>
+
+        <!-- PERSISTENCE -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-h2</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.kie</groupId>
-            <artifactId>kie-addons-quarkus-monitoring-prometheus</artifactId>
+            <artifactId>kie-addons-quarkus-persistence-jdbc</artifactId>
         </dependency>
+
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-openapi</artifactId>
